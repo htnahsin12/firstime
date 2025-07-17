@@ -1,0 +1,126 @@
+﻿Display Name,Severity,MITRE Tactics
+L-022 Impacket SecretDump Remote Activity,Medium,CredentialAccess
+L-023 Overpass The Hash,Medium,"DefenseEvasion, LateralMovement"
+L-025 Remote Task Creation via SVCCTL Named Pipe,Medium,"Execution, Persistence, PrivilegeEscalation"
+L-029 Suspicious Certutil Encoding,Medium,DefenseEvasion
+L-030 Powerview Add-DomainObjectAcl DCSync AD Extend Right,Medium,"CredentialAccess, Persistence"
+L-032 Machine detected with Malware and auto-clean failed,Medium,Execution
+L-042 MSFS EDL feed hits,Medium,Exfiltration
+L-049 VPN Brute force Failures,Medium,CredentialAccess
+L-024 Persistence and Execution via GPO Scheduled Task,Medium,"Execution, Persistence, PrivilegeEscalation"
+L-026 Same Source Logged In Using Many Accounts,Medium,CredentialAccess
+L-028 Potential Process Doppelganging,Low,"DefenseEvasion, PrivilegeEscalation"
+L-035 Malware detected by PaloAlto Firewall,Medium,Execution
+L-037 Hacking tool detected,Medium,Execution
+L-038 Failed authentication PaloAlto,Medium,CredentialAccess
+L-040 Suspicious Windows Processes,Medium,"Persistence, PrivilegeEscalation"
+L-041 APT33 RULER Tool Detection,Medium,"CommandAndControl, Discovery, Exfiltration"
+L-043 Multiple signature triggered for the same IP source,Medium,InitialAccess
+L-044 Cisco IOS Smart Install Code Execution Vulnerability,Medium,InitialAccess
+L-045 Suspicious download from uncategorized website,Medium,InitialAccess
+L-047 Microsoft Remote Desktop Service Remote Code Execution (Bluekeep),Medium,InitialAccess
+L-048 Detect Password Dumper Activity on LSASS,Medium,CredentialAccess
+L-050 VPN Brute Force Attack followed by Successful Access,Medium,InitialAccess
+L-061 Exploit Attempt of F5 BIGIP RCE Vulnerability,Medium,InitialAccess
+L-033 Multiple malware infections same malware on different devices,Medium,Execution
+L-034 Suspicious downloads to URL contains 'wget',Medium,CommandAndControl
+L-072 Suspicious outbound DNS queries,Medium,CommandAndControl
+L-019 Windows Scheduled Task Created,Low,"Execution, Persistence"
+L-076 MS Exchange Zero Day PaloAlto Threat Signatures,Medium,Execution
+L-077 MS Exchange Zero Day Hash IOC observed,Medium,Execution
+L-078 MS Exchange Zero Day Suspicious Process Execution,Medium,"Execution, PrivilegeEscalation"
+-044 Distributed Password cracking attempts in AzureAD,Medium,CredentialAccess
+-027 SecurityEvent - Multiple authentication failures followed by a success,Low,CredentialAccess
+-013 Failed logon attempts in authpriv,Medium,CredentialAccess
+-020 Potential DGA detected,Medium,CommandAndControl
+-024 Rare client observed with high reverse DNS lookup count,Medium,Discovery
+-009 DNS events related to ToR proxies,Low,Exfiltration
+-045 DNS events related to mining pools,Low,Impact
+ -060 Suspicious Resource deployment,Low,Impact
+-068 Privileged Threat Analytics Event,Low,CommandAndControl
+L-052-Log4j Vulnerabilty Exploit,Medium,InitialAccess
+-095 Sailpoint Suspicious Login outside usual hours,Low,InitialAccess
+-096 Sailpoint repeated login failures,Low,InitialAccess
+-098 Sailpoint High amount of password reset attempts,Low,"CredentialAccess, InitialAccess"
+-099 Sailpoint Privileged users identity modified,Low,"Persistence, PrivilegeEscalation"
+QC-PRD-SENTINEL- 079-Log4J Outbound Connection To Known Malicious IP,Informational,"CommandAndControl, Exfiltration"
+L-017 RDP Over Reverse Tunnel,Medium,CommandAndControl
+-089 PIM Elevation Request Rejected,High,Persistence
+-029 Suspicious application consent similar to O365 Attack Toolkit,High,"CredentialAccess, DefenseEvasion"
+L-008 Vulnerability Exploit related to Solarwinds breach,Medium,InitialAccess
+-038 Exchange OAB Virtual Directory Attribute Containing Potential Webshell,High,InitialAccess
+L-007 Hack tools from FireEye breach,Medium,CommandAndControl
+-071 Security Service Registry ACL Modification,High,DefenseEvasion
+-085 Solorigate Named Pipe,High,"DefenseEvasion, PrivilegeEscalation"
+L-012 System Time Modification,Medium,DefenseEvasion
+ -065 Email access via active sync,Medium,PrivilegeEscalation
+-084 Known NICKEL domains and hashes,High,CommandAndControl
+-094 Sailpoint Break Glass Login,Medium,InitialAccess
+-097 Sailpoint Login attempts breakglass account,Medium,InitialAccess
+-092 NOBELIUM IOCs related to FoggyWeb backdoor,High,Collection
+-083 Known ZINC Comebacker and Klackring malware hashes,High,"CommandAndControl, Execution"
+UK-PRD- SENTINEL 076 DEV-0322 Serv-U related IOCs - July 2021,High,InitialAccess
+-102 PaloAlto - Possible port scan,High,Reconnaissance
+-103 PaloAlto - Possible attack without response,Informational,InitialAccess
+-104 PaloAlto - Put and post method request in high risk file type,High,InitialAccess
+-106 PaloAlto - File type changed,Medium,InitialAccess
+-107 PaloAlto - Forbidden countries,Medium,InitialAccess
+-108 PaloAlto - Inbound connection to high risk ports,Medium,InitialAccess
+-109 PaloAlto - Dropping or denying session with traffic,Informational,InitialAccess
+-110 PaloAlto - Possible flooding,Informational,InitialAccess
+-111 PaloAlto - MAC address conflict,Low,InitialAccess
+L-049 VPN Brute force Failures-1,Medium,CredentialAccess
+L-050 VPN Brute Force Attack followed by Successful Access-1,Medium,InitialAccess
+QC - Privileges of a user were changed,Medium,InitialAccess
+QC - New executable via Office FileUploaded Operation,Informational,CommandAndControl
+QC - (Cross Workspace) ThreatIntel Domain to CommonSecurityLog,Medium,Impact
+L-105 User added and removed from administrative group,Medium,PrivilegeEscalation
+QC - User account enabled and password not reset for 48 hours,Low,Persistence
+QC - Critical Threat Detected from Carbon Black Alerts,High,"ResourceDevelopment, Impact"
+-008 EWT Mass secret retrieval from Azure Key Vault,Low,CredentialAccess
+-007 EWT Sensitive Azure Key Vault operations,Low,Impact
+-006 EWT Azure Key Vault access TimeSeries anomaly,Low,CredentialAccess
+Known bad URLs X_trader,Informational,CommandAndControl
+Common spearphishing attachment names writting to disk,Informational,"InitialAccess, Execution"
+AsyncRAT known MD5 Hashes,Informational,InitialAccess
+LD_PRELOAD SO loading,Informational,DefenseEvasion
+Detect Windapsearch on Linux devices,Informational,Discovery
+Socks proxy with Curl,Informational,CommandAndControl
+Curl upload file,Informational,Exfiltration
+Known Evil Extractor SHA256 Hashes,Informational,Execution
+Known bad URLs OneNote,Informational,InitialAccess
+Telegram connection logged,Informational,"CommandAndControl, Exfiltration"
+Base64 decode in command line,Informational,DefenseEvasion
+Scheduled malicious file,Informational,Execution
+Unusual RuntimeBroker masquerading file or location,Informational,DefenseEvasion
+QR code recieved via email,Informational,InitialAccess
+Deletion of init.d script,Informational,DefenseEvasion
+Plink protocol tunneling tool identified,Informational,"Execution, LateralMovement, CommandAndControl, InitialAccess"
+LOOBIN security,Informational,CredentialAccess
+Anomali Domain indicator matches against Watchguard,Informational,Impact
+Kerberos Credential Cache access with KCC,Informational,CredentialAccess
+Wipe a disk with DD,Informational,DefenseEvasion
+Exaramel backdoor detection,Informational,Persistence
+Stop Services with systemctl,Informational,Impact
+Log4J exploitation to spawn a shell,Informational,InitialAccess
+SSH Remote Script Execution,Informational,LateralMovement
+Kerberos Abuse Toolkit for Mac,Informational,CredentialAccess
+Polkit exploitation with PKEXEC,Informational,PrivilegeEscalation
+PowerShell or Python execution via AppleScript,Informational,Execution
+Swift Binary Based,Informational,Discovery
+ShadowHash Dump,Informational,CredentialAccess
+Critical directory or file removal,Informational,Impact
+Shred command,Informational,Impact
+Directory or file removal,Informational,Impact
+Detect NPPSpy registry modification,Informational,"CredentialAccess, Execution"
+DSCL Create Hidden Account,Informational,"Persistence, PrivilegeEscalation"
+Swift Based,Informational,Discovery
+Suspicious WinAPI calls,Informational,"CredentialAccess, DefenseEvasion, PrivilegeEscalation"
+Detect suspicious process created accessing LSA Secrets,Informational,CredentialAccess
+Fake password prompt,Informational,"CredentialAccess, Execution"
+Suspicious WebDav client execution,Informational,Exfiltration
+Network connection launched from msiexec,Informational,"Execution, DefenseEvasion"
+PowerShell downgrade attack,Informational,"DefenseEvasion, Execution"
+Suspicious Terminal Services service started,Informational,"Execution, LateralMovement, Discovery"
+gsecdump artifact dropped on disk,Informational,CredentialAccess
+-113 CyberArk Failed Password Attempt Detection,Low,CredentialAccess
